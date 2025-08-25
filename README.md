@@ -17,6 +17,10 @@ Une Web passerelle SMS pour les routeurs Huawei LTE via l'API huawei-lte-api
 Cette application est une **Gateway SMS** développée en **Python (Flask)**.  
 Elle permet d’envoyer des SMS via un modem **Huawei** en exposant une **API HTTP simple**.
 
+Exemple d'utilisation : 
+- Configurer des alertes SMS sur votre monitoring Zabbix ou PRTG.
+- Intégrer des alertes SMS dans n'importe quel script.
+
 ---
 
 ### 🔄 Fonctionnement
