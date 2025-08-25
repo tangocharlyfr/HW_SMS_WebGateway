@@ -1,0 +1,4 @@
+Flask
+huawei-lte-api
+requests
+gunicorn

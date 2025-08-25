@@ -1,0 +1,18 @@
+services:
+  huawei_sms_server:
+    build: .
+    container_name: HW_SMS_WebGateway
+    ports:
+      - "8282:8080"
+    restart: unless-stopped
+    environment:
+      APP_ENV: production
+      ROUTER_USER: ${ROUTER_USER}
+      ROUTER_PASSWORD: ${ROUTER_PASSWORD}
+      ROUTER_IP: ${ROUTER_IP}
+    healthcheck:
+      test: ["CMD", "python", "healthcheck.py"] # Check HTTP GET LocalHost & Check Ping to Huawei Routeur
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
