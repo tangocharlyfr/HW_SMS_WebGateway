@@ -134,7 +134,7 @@ Vous pouvez déployer la **Gateway SMS** directement depuis le dépôt GitHub en
 2. Allez dans **Stacks** → **Add stack** → **Deploy from repository**.  
 Remplissez les champs :  
    - **Repository URL** : `https://github.com/tangocharlyfr/HW_SMS_WebGateway.git`  
-   - **Repository reference/branch** : `main`  
+   - **Repository reference/branch** : `refs/heads/main`  
    - **Compose path** : `docker-compose.yml`  
 4. **Créer les variables d’environnement** nécessaires pour l’application :  
    - `ROUTER_USER` → utilisateur du modem/routeur  
