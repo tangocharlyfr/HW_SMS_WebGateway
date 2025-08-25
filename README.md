@@ -62,10 +62,13 @@ Un **worker en arrière-plan** prend en charge les SMS et applique :
 ### 3. Se placer dans le répertoire cloné
 `cd /opt/HW_SMS_WebGateway`
 
-### 4. Éditer le fichier `docker-compose.yml`
-Modifiez les variables pour transmettre à l’application le login, le mot de passe et l’IP de votre routeur Huawei :
+### 4. Copier le fichier `.env.template` vers `.env` et éditer le ficher `.env`
+Ajouter le répertoire comme sur : 
+`git config --global --add safe.directory /opt/HW_SMS_WebGateway`
 
-`nano docker-compose.yml`
+Modifiez les variables pour transmettre à l’application le login, le mot de passe et l’IP de votre routeur Huawei :
+`cp .env.template .env`
+`nano .env`
 
 ROUTER_USER: admin  
 ROUTER_PASSWORD: password  
