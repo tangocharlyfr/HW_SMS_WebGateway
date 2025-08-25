@@ -64,7 +64,7 @@ Un **worker en arrière-plan** prend en charge les SMS et applique :
 
 ### 4. Copier le fichier `.env.template` vers `.env` et éditer le ficher `.env`
 Ajouter le répertoire comme sur : 
-`git config --global --add safe.directory /opt/HW_SMS_WebGateway`
+`git config --local --add safe.directory /opt/HW_SMS_WebGateway`
 
 Modifiez les variables pour transmettre à l’application le login, le mot de passe et l’IP de votre routeur Huawei :
 `cp .env.template .env`
