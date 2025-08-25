@@ -68,6 +68,7 @@ Ajouter le répertoire comme sur :
 
 Modifiez les variables pour transmettre à l’application le login, le mot de passe et l’IP de votre routeur Huawei :
 `cp .env.template .env`
+
 `nano .env`
 
 ROUTER_USER: admin  
